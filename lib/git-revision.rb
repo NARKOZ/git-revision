@@ -30,7 +30,7 @@ module Git
       end
 
       def branch
-        `git ls-remote --heads origin | grep $(git rev-parse HEAD) | cut -d / -f 3`.strip
+        `git rev-parse --abbrev-ref HEAD`.strip
       end
 
       def info
