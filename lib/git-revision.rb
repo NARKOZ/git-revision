@@ -29,8 +29,13 @@ module Git
         `git describe --tags --abbrev=0`.strip
       end
 
+      def branch
+        `git rev-parse --abbrev-ref HEAD`.strip
+      end
+
       def info
         @info ||= {
+          :branch             => branch,
           :commit_hash        => commit,
           :commit_hash_short  => commit_short,
           :commit_subject     => message,
