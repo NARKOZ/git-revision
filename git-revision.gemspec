@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.license      = 'BSD'
 
   gem.author       = 'Nihad Abbasov'
-  gem.email        = 'mail@narkoz.me'
+  gem.email        = 'nihad@42na.in'
   gem.summary      = 'Git Revision provides information about git source code.'
   gem.homepage     = 'http://github.com/narkoz/git-revision'
 end
