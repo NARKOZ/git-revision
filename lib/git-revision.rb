@@ -33,8 +33,13 @@ module Git
         `git rev-parse --abbrev-ref HEAD`.strip
       end
 
+      def author
+        `git log -1 --pretty=format:"%an"`
+      end
+
       def info
         @info ||= {
+          :author             => author,
           :branch             => branch,
           :commit_hash        => commit,
           :commit_hash_short  => commit_short,
