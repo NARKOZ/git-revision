@@ -1,6 +1,6 @@
 Gem::Specification.new do |gem|
   gem.name         = 'git-revision'
-  gem.version      = '0.0.3'
+  gem.version      = '0.0.4'
   gem.files        = `git ls-files`.split($\)
   gem.require_path = 'lib'
   gem.license      = 'BSD'
