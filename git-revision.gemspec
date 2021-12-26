@@ -3,7 +3,7 @@ Gem::Specification.new do |gem|
   gem.version      = '0.0.4'
   gem.files        = `git ls-files`.split($\)
   gem.require_path = 'lib'
-  gem.license      = 'BSD'
+  gem.license      = 'BSD-2-Clause'
 
   gem.author       = 'Nihad Abbasov'
   gem.email        = 'nihad@42na.in'
