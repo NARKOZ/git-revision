@@ -23,8 +23,8 @@ bundle install
 
 ```ruby
 {
-  :author=>"Nihad Abbasov",
-  :branch=>"master",
+  :author => "John Smith",
+  :branch => "master",
   :commit_hash => "60619c10baca6f9b4d03253697d43b7cf5d08edf",
   :commit_hash_short => "60619c1",
   :commit_subject => "release beta version",
@@ -39,7 +39,7 @@ Additionally you can access these methods directly:
 
 ```ruby
 Git::Revision.author       # returns last commit author
-Git::Revision.branch       # returns branch
+Git::Revision.branch       # returns current branch
 Git::Revision.commit       # returns last commit hash
 Git::Revision.commit_short # returns abbreviated last commit hash (7 characters)
 Git::Revision.message      # returns last commit message subject
