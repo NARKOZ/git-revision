@@ -1,5 +1,7 @@
 module Git
   class Revision
+    require 'open3'
+
     class << self
       def commit
         `git log -1 --pretty="format:%H"`
@@ -22,7 +24,8 @@ module Git
       end
 
       def tag
-        `git describe --exact-match #{commit}`.strip
+        stdout, _stderr, _status = Open3.capture3("git describe --exact-match #{commit}")
+        stdout.strip
       end
 
       def last_tag
