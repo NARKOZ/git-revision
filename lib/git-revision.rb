@@ -29,6 +29,10 @@ module Git
         `git describe --tags --abbrev=0`.strip
       end
 
+      def long_tag
+        `git describe --long`.strip
+      end
+
       def branch
         `git rev-parse --abbrev-ref HEAD`.strip
       end
@@ -47,7 +51,8 @@ module Git
           :authored_date      => date,
           :authored_timestamp => timestamp,
           :commit_tag         => tag,
-          :repo_last_tag      => last_tag
+          :repo_last_tag      => last_tag,
+          :long_tag           => long_tag
         }
       end
     end
