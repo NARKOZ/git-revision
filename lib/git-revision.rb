@@ -24,8 +24,7 @@ module Git
       end
 
       def tag
-        stdout, _stderr, _status = Open3.capture3("git describe --exact-match #{commit}")
-        stdout.strip
+        `git tag --points-at #{commit} | sort | head -n 1`.strip
       end
 
       def last_tag
