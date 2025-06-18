@@ -1,7 +1,7 @@
 # Git Revision
 
 Git Revision is a simple (45 SLoC) Ruby gem that provides basic information about git source code.
-You can use it in your apps, [for example](http://stackoverflow.com/q/8500644/159721), to show deployed version.
+You can use it in your apps, [for example](https://stackoverflow.com/a/8501359), to show deployed version.
 
 ## Installation
 
