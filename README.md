@@ -31,7 +31,8 @@ bundle install
   :authored_date => "Fri Jun 8 17:55:01 2012 +0500",
   :authored_timestamp => "1339160101",
   :commit_tag => "4.2.0.beta",
-  :repo_last_tag => "4.2.0.beta"
+  :repo_last_tag => "4.2.0.beta",
+  :long_tag => "v4.2.0.beta-7-60619c1"
 }
 ```
 
@@ -47,6 +48,7 @@ Git::Revision.date         # returns authored date of last commit
 Git::Revision.timestamp    # returns authored date of last commit in Unix time
 Git::Revision.tag          # returns last commit tag if exists
 Git::Revision.last_tag     # returns last tag in repository if exists
+Git::Revision.long_tag     # returns last tag, number of commits since, and short commit hash
 ```
 
 ## License
