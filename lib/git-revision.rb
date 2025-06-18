@@ -1,7 +1,5 @@
 module Git
   class Revision
-    require 'open3'
-
     class << self
       def commit
         `git log -1 --pretty="format:%H"`
