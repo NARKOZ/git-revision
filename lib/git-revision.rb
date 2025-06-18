@@ -22,7 +22,7 @@ module Git
       end
 
       def tag
-        `git describe --exact-match #{commit}`.strip
+        `git tag --points-at #{commit} | sort | head -n 1`.strip
       end
 
       def last_tag
